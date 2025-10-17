@@ -1,11 +1,11 @@
-<section class="bg-gray-300/30 py-8">
+<section id="menu" class="bg-gray-300/30 py-8">
         <div class="max-w-6xl my-4 p-8 mx-auto bg-white  rounded-3xl">
 
         <div class="flex items-center justify-between py-4">
           
             <h3 class="text-2xl font-semibold">Menu</h3>
 
-                <select wire:model.live="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <select wire:model.live="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/5 p-2.5">
                     <option selected value="all">All</option>
                     @foreach($categories as $category)
                     <option value="{{ $category->id }}">{{ $category->name }}</option>
